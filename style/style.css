@@ -28,10 +28,15 @@ body {
   padding-top: 37px;
 }
 
+.headersection img {
+  padding-top: 10px;
+}
+
 .headersection .navigation-bar {
   /* background-color: #280999; */
   display: flex;
-  align-items: center;
+
+  align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
 }
