@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
@@ -37,8 +34,11 @@
 
           <section class="headersection__feature">
             <div class="headersection__feature__box">
-              <h1>Customize Every</h1>
-              <h1>recipe!</h1>
+              <h1>
+                Customize Every
+                <span class="headersection__recipe">recipe!</span>
+              </h1>
+
               <p>
                 Make your own version of a favorite recipe without doing all the
                 dishes
@@ -253,5 +253,17 @@
         </div>
       </div>
     </footer>
+    <!-- --------------------- script navigation bar   --------------------- -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
