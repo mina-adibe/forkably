@@ -13,9 +13,9 @@
   width: 80%;
 }
 
-/* body {
+body {
   background-color: darkslategray;
-} */
+}
 
 /* ---------------------------- begin of header ---------------------------- */
 .headersection {
@@ -521,20 +521,20 @@
   margin-right: 9px;
 }
 
-/* ---------------------------- end  of footer ---------------------------- */
+
 
 /* ---------------------- for guidness only ----------------------------------------------------- */
 footer {
   background-color: #ffe220;
 }
 
-/* .features {
+.features {
   background-color: rgb(51, 248, 2);
 }
 
 .cardssection {
   background-color: blue;
-} */
+}
 
 /*  ---------------------- media query for responsive   ---------------------- */
 
@@ -604,10 +604,79 @@ footer {
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {}
+@media only screen and (min-width : 440px) and (max-width:768px) {
+
+
+  /* html {
+      font-size: 20px;
+    } */
+  .headersection .headersection__feature .headersection__feature__box {
+    width: 100%;
+    /* background-color: #592ef5; */
+    padding-bottom: 20px;
+  }
+
+  .cardssection .cardsection__title {
+    width: 80vw;
+    margin: 0 auto 45px auto;
+    /* background-color: dodgerblue; */
+  }
+
+  .cardssection .cards {
+    margin: 0px auto 30px auto;
+  }
+
+  .cardssection .cards .card {
+    margin: 1px auto 30px auto;
+  }
+
+
+  .footer-section .footer-section__row1 .footer-section__row1__col1 {
+
+    margin-bottom: 30px;
+    width: 80vw;
+    padding: 10px;
+
+  }
+
+
+  .footer-section .footer-section__row1 .footer-section__row1__col2 {
+    width: 80vw;
+    padding: 20px;
+  }
+
+  .footer-section__row4 .footer-section__col1 {
+    width: 80vw;
+    /* background-color: firebrick; */
+    margin-bottom: 20px;
+  }
+
+  .footer-section__row4 .footer-section__col2 {
+    width: 80vw;
+    /* background-color: firebrick; */
+  }
+
+  .footer-section .footer-section__nav-bar {
+    margin-bottom: 20px;
+    /* background-color: firebrick; */
+
+    text-align: center;
+  }
+
+  .footer-section .footer-section__icons {
+    margin: auto;
+  }
+
+}
+
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media only screen and (min-width : 440px) and (max-width:768px) {}
+
+@media only screen and (min-width : 768px) and (max-width:992px) {}
+
+@media only screen and (min-width : 992px) and (max-width:1200px) {}
+
 
 
 /* Extra large devices (large desktops, 1200px and up) */
