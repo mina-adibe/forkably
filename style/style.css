@@ -538,9 +538,8 @@ footer {
 
 /*  ---------------------- media query for responsive   ---------------------- */
 
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 440px) {
+/* For devices with width of 480px and less, like phones */
+@media only screen and (max-width: 480px) {
 
   /* html {
     font-size: 20px;
@@ -603,8 +602,8 @@ footer {
   }
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media only screen and (min-width : 440px) and (max-width:768px) {
+/* For devices with width between 481px and 768px, like larger phones and portrait tablets */
+@media only screen and (min-width: 481px) {
 
 
   /* html {
@@ -669,28 +668,8 @@ footer {
 
 }
 
+/* For devices with width between 769px and 1279px, like landscape tablets and laptops */
+@media only screen and (min-width: 769px) {}
 
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width : 440px) and (max-width:768px) {}
-
-@media only screen and (min-width : 768px) and (max-width:992px) {}
-
-@media only screen and (min-width : 992px) and (max-width:1200px) {}
-
-
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
-
-/* Set width to make card deck cards 100% width */
-@media (max-width: 950px) {}
-
-
-@media screen and (max-width: 1000px) {
+/* For devices with width of 1280px and more, like desktop computers */
+@media only screen and (min-width: 1280px) {}
