@@ -771,15 +771,67 @@ footer {
 /* For devices with width between 769px and 1279px, like landscape tablets and laptops */
 @media only screen and (min-width: 769px) {
   .headersection .headersection__feature .headersection__feature__box {
-    width: 50%;
-
+    width: 60%;
   }
+
+
+  /* .headersection .headersection__feature .headersection__feature__box {
+    width: 100%;
+    padding-bottom: 20px;
+  } */
+
+  .cardssection .cardsection__title {
+    width: 80vw;
+    margin: 0 auto 45px auto;
+  }
+
+  .cardssection .cards {
+    margin: 0px auto 30px auto;
+  }
+
+  .cardssection .cards .card {
+    margin: 1px auto 30px auto;
+  }
+
+
+  .footer-section .footer-section__row1 .footer-section__row1__col1 {
+    margin-bottom: 30px;
+    width: 80vw;
+    padding: 10px;
+  }
+
+
+  .footer-section .footer-section__row1 .footer-section__row1__col2 {
+    width: 80vw;
+    padding: 20px;
+  }
+
+  .footer-section__row4 .footer-section__col1 {
+    margin-bottom: 20px;
+  }
+
+
+  .footer-section .footer-section__nav-bar {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-section .footer-section__icons {
+    margin: auto;
+  }
+
 }
 
-/* For devices with width of 1280px and more, like desktop computers */
-@media only screen and (min-width: 1280px) {}
 
-/*---------------------------------- begin  copd nav  */
+/* For devices with width of 1280px and more, like desktop computers */
+@media only screen and (min-width: 1280px) {
+  .headersection .headersection__feature .headersection__feature__box {
+    width: 50%;
+  }
+
+}
+
+/*----------------------------------    nav ---------------------------------   */
 
 
 .header-area {
