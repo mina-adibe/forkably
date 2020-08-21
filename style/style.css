@@ -572,7 +572,14 @@ body {
   margin-right: 16px;
 }
 
-
+.footer-section .footer-section__nav-bar ul li a {
+  text-decoration: none;
+  color: #242424;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1rem;
+  font-size: 0.9rem;
+}
 
 .footer-section .footer-section__line {
   margin: 0px auto 45px auto;
