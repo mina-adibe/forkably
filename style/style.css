@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root {
+  --input-color: #99a3ba;
+  --input-border: #cdd9ed;
+  --input-background: #fff;
+  --input-placeholder: #cbd1dc;
+  --input-border-focus: #275efe;
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #eef4ff;
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678efe;
+}
 
 * {
   box-sizing: content-box;
@@ -366,17 +381,17 @@ body {
 .footer-section .footer-section__row1 .footer-section__row1__col1 h2 {
   color: #242424;
   font-family: Poppins;
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 1.687rem;
+  font-weight: 500;
   line-height: 32px;
   margin-bottom: 11px;
 }
 
 .footer-section .footer-section__row1 .footer-section__row1__col1 p {
   color: #464646;
-  font-family: Poppins;
+  font-family: Poppins - Semi Bold;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   margin-bottom: 25px;
 }
@@ -410,10 +425,11 @@ body {
 }
 
 .footer-section .footer-section__row1 .footer-section__row1__col2 h2 {
+  max-width: 360px;
   color: #242424;
   font-family: Poppins;
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 1.687rem;
+  font-weight: 500;
   margin-bottom: 11px;
 }
 
@@ -421,25 +437,119 @@ body {
   color: #767676;
   font-family: Poppins;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   margin-bottom: 11px;
   margin-bottom: 25px;
 }
 
-.footer-section .footer-section__row1 .footer-section__row1__col2 input {
-  width: 75%;
-  height: 10%;
-  border: 1px solid #aaaaaa;
-  background-color: #ffffff;
-  padding-left: 21px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  font-family: Poppins;
-  font-weight: 400;
-  line-height: 24px;
-  font-size: 0.9rem;
+
+.footer-section .footer-section__row1 .form-field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+}
+
+.form-field::-webkit-input-placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field::-moz-placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field:-ms-input-placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field::-ms-input-placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field::placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+
+}
+
+.form-group {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+}
+
+.form-group>span,
+.form-group .form-field {
+  white-space: nowrap;
+  display: block;
+}
+
+.form-group>span:not(:first-child):not(:last-child),
+.form-group .form-field:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.form-group>span:first-child,
+.form-group .form-field:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.form-group>span:last-child,
+.form-group .form-field:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.form-group>span:not(:first-child),
+.form-group .form-field:not(:first-child) {
+  margin-left: -1px;
+}
+
+.form-group .form-field {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-group>span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--group-color);
+  background: var(--group-background);
+  border: 1px solid var(--group-border);
+  -webkit-transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.form-group:focus-within>span {
+  color: var(--group-color-focus);
+  background: var(--group-background-focus);
+  border-color: var(--group-border-focus);
+  cursor: pointer;
+}
+
+.footer-section .footer-section__row1 .footer-section__row1__col2 .footer-section__input-box {
+  height: 51px;
 }
 
 .footer-section .footer-section__row2 {
@@ -462,14 +572,7 @@ body {
   margin-right: 16px;
 }
 
-.footer-section .footer-section__nav-bar ul li a {
-  text-decoration: none;
-  color: #242424;
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 1rem;
-  font-size: 0.9rem;
-}
+
 
 .footer-section .footer-section__line {
   margin: 0px auto 45px auto;
@@ -486,12 +589,13 @@ body {
 
 .footer-section .footer-section__icons img {
   margin-right: 11px;
+  margin-bottom: 15px;
 }
 
 .footer-section__row4 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -518,9 +622,7 @@ body {
   padding: 2px;
 }
 
-.footer-section__row4 .footer-section__col2 {
-  /* padding: 2px; */
-}
+
 
 .footer-section__row4 .footer-section__support,
 .footer-section__phone {
@@ -528,6 +630,17 @@ body {
 }
 
 .footer-section__row4 .footer-section__support {
+  margin-right: 13px;
+}
+
+.footer-section__row4 .footer-section__support h3 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+}
+
+.footer-section__row4 .footer-section__support p {
   margin-right: 13px;
 }
 
@@ -729,26 +842,20 @@ a.site-logo {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: rgb(51, 216, 202);
-
 }
 
 .site-navbar ul li {
   display: inline-block;
   text-decoration: none;
-  /* margin-left: 27px; */
   margin-bottom: 10px;
-  background-color: rgb(248, 27, 64);
-  text-align: center;
-
 }
 
 .site-navbar ul li a {
   text-decoration: none;
   color: #242424;
   font-family: Poppins;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.94rem;
 
 }
 
